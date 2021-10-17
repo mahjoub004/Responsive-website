@@ -6,9 +6,9 @@
     --primary-color:#f28517
 }
 .background_images {
-    background-image: linear-gradient(#484c77b2,#00010cb3), url('./images/blog1.jpg');
+    background-image: linear-gradient(#484c77b2,#00010cb3), url('./images/bg-image-1.jpg');
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
 }
 .background_images .navbar{
@@ -82,3 +82,261 @@
     }
 }
 
+/**   widgets_area  */
+
+.widgets_area{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.widgets_area .row{
+    align-items: center;
+    justify-content: center;
+}
+.widgets_area .row a img {
+    opacity: 0.7;
+    max-width: 130px;
+    max-height: 100px;
+}
+.widgets_area .row a img:hover{
+    opacity: 1;
+}
+/**   services section  */
+.services_section{
+    margin: 100px 0px;
+}
+.services_section .heading{
+    font-weight: 800;
+    font-size: 50px;
+}
+.services_section .heading span{
+    color: var(--primary-color);
+}
+.services_section .txt{
+    font-size: 14px;
+    color: #1f1f1fbb;
+}
+.services_cards .card{
+    background: #eaeaea61;
+    padding: 20px;
+}
+.services_cards .card:hover{
+    background: var(--primary-color);
+    animation: pilse;
+    animation-duration: 0.5s;
+}
+.services_cards .card:hover i{
+    color: white !important;
+}
+.services_cards .card:hover .card_txt{
+    color: white !important;
+}
+.services_cards .card:hover .card_title{
+    color: white !important;
+}
+.services_cards .card .card-header{
+background: transparent;
+}
+.services_cards .card .card-header i{
+  color: var(--primary-color);
+  font-size: 40px;
+}
+.services_cards .card .card_title { 
+font-size: 20px;
+font-weight: 500;
+}
+.services_cards .card_txt{
+color: black;
+}
+
+/**     About   **/
+.about_section .heading{
+    font-weight: 800 !important;
+    font-size: 55px;
+}
+.about_section .heading span{
+    color: var(--primary-color);
+}
+.about_section .txt{
+    color: #00010cb3;
+    line-height: 26px;
+    font-size: 16px;
+}
+.about_section .list-unstyled a{
+font-size: 14px;
+}
+.about_section .list-unstyled i{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+.about_section .list-unstyled i:hover{
+    color: rgb(32, 104, 10);
+    font-size: 30px;
+}
+.about_section button{
+    background-color: var(--primary-color);
+    color: white !important;
+    border: 2px solid var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 20px;
+}
+.about_section button:hover{
+    animation: pulse;
+    animation-duration: 0.5s;
+    background-color: var(--primary-color);
+    color: white !important;
+    border-color: var(--primary-color);
+}
+/****         project_section     ****/
+.project_section{
+    margin: 102px 0px;
+}
+.project_section .heading{
+    font-weight: 800;
+    font-size: 50px;
+}
+.project_section .heading span{
+    color: var(--primary-color);
+}
+.project_section .txt{
+    font-size: 14px;
+    color: black;
+}
+.project_section .card-body{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(45deg, #f28517,#c39668);
+    height: 50%;
+    display: none;
+}
+.project_section .card:hover .card-body{
+    display: block;
+    animation: flipInX;
+    animation-duration: 1s;
+}
+
+.project_section .card-body .card_title{
+    font-weight: 500;
+    font-size: 17px;
+}
+.project_section .card-body .card-txt{
+color: black;
+font-size: 13px;
+}
+.project_section .card-body hr{
+    margin: 10px 0px;
+    height: 0.1px;
+    background: black;
+    width: 24%;
+}
+/****        skilled team    ****/
+.skilled_section{
+    margin: 150px 0px;
+}
+.skilled_section .heading{
+    font-weight: 800;
+    font-size: 50px;
+}
+.skilled_section .heading span{
+    color: var(--primary-color);
+}
+.skilled_section .txt{
+    font-size: 14px;
+    color: black;
+}
+.skilled_section .card-body{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(45deg, #f28517,#c39668);
+    height: 20%;
+    width: 100%;
+    display: none;
+}
+.skilled_section .card:hover .card-body{
+    display: block;
+    animation: flipInX;
+    animation-duration: 1s;
+}
+
+.skilled_section .card-body .card_title{
+    font-weight: 500;
+    font-size: 17px;
+}
+.skilled_section .card-body .card-txt{
+color: black;
+font-size: 13px;
+}
+.skilled_section .card-body hr{
+    margin: 10px 0px;
+    height: 0.1px;
+    background: black;
+    width: 40%;
+}
+/**         contact_section   +*/
+.contact_section .heading{
+    font-weight: 800;
+    font-size: 50px;
+}
+.contact_section span{
+    color: var(--primary-color);
+}
+.contact_section .txt{
+    font-size: 14px;
+    color: black;
+}
+.contact_section form .form-control{
+    background: white;
+    border: 2px solid black;
+    border-radius: 0;
+    color:black
+}
+.contact_section form button{
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px 10px 30px !important;
+}
+.contact_section form button:hover{
+    animation: pulse;
+    animation-duration: 0.5s;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+}
+/**         footer section  +*/
+.footer_section {
+    background: rgb(39, 39, 39);
+    padding: 20px 0px;
+    margin-top: 5%;
+    color: azure;
+}
+.footer_section .navbar-brand a{
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+.footer_section .navbar-brand a span{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+.footer_section .links_column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_section .links .fab{
+    color: var(--primary-color);
+    font-size: 17px;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.footer_section .links .fab:hover{
+    animation: pulse;
+    animation-duration:0.5s ;
+}
